@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<SimulatorEPS> <!-- root do arquivo-->
+    <Simulate> <!-- elemento filho de SimulatorEPS-->
+        <MA timestamp="100" name="Conveyor" class="system.physical.Conveyor" ></MA> <!-- responsável pela definição dos agentes do sistema-->
+        
+        <MA timestamp="100" name="Identifier" class="system.physical.Identifier" ></MA>
+        
+        <MA timestamp="100" name="Painter" class="system.physical.Painter" ></MA>
+        
+        <MA timestamp ="100" name = "Color Picker" class ="system.physical.ColorPicker"></MA>
+        
+        <MA timestamp ="100" name = "Conveyor Green" class ="system.physical.ConveyorDestiny"></MA>
+       
+        <MA timestamp = "3000" name = "Product Green" class = "system.cognitive.Production"></MA>
+        
+        
+    </Simulate>
+</SimulatorEPS>

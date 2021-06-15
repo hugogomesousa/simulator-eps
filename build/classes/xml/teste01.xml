@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+XML de aplicação com a descrição dos agentes mecatrônicos presentes no sistema.
+O agente Simulator decodificará as informações desse XMl para instanciar os agentes mecatrônicos
+-->
+
+
+<SimulatorEPS> <!-- root do arquivo-->
+    <Simulate> <!-- elemento filho de SimulatorEPS-->
+        <MA timestamp="100" name="Conveyor" class="system.physical.Conveyor" ></MA> <!-- responsável pela definição dos agentes do sistema-->
+        
+        <MA timestamp="100" name="Identifier" class="system.physical.Identifier" ></MA>
+        <Arg type = "Integer">1</Arg>
+        
+        <MA timestamp="100" name="Painter" class="system.physical.Painter" ></MA>
+        
+        <MA timestamp ="100" name = "Color Picker" class ="system.physical.ColorPicker"></MA>
+        
+        <MA timestamp ="100" name = "Conveyor Green" class ="system.physical.ConveyorDestiny"></MA>
+        <Arg type = "Integer">0</Arg>
+        
+        <MA timestamp ="100" name = "Conveyor Blue" class ="system.physical.ConveyorDestiny"></MA>
+        <Arg type = "Integer">1</Arg>
+        
+        <MA timestamp ="100" name = "Conveyor Red" class ="system.physical.ConveyorDestiny"></MA>
+        <Arg type = "Integer">2</Arg>
+        
+        <MA timestamp = "3000" name = "Product Green" class = "system.cognitive.Color"></MA>
+        
+        
+    </Simulate>
+</SimulatorEPS>
